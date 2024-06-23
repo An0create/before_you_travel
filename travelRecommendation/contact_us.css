@@ -35,15 +35,14 @@ h1 {
     font-family:'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 30px;
-  }
-  
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: lightblue;
- 
 }
-
   
+
+* {
+    box-sizing: border-box;
+}
+  
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -60,7 +59,7 @@ input[type=submit] {
     border: none;
     cursor: pointer;
 }
-  
+
 input[type=submit]:hover {
     background-color: #45a049;
 }
@@ -68,7 +67,7 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: transparent;
     padding: 10px;
 }
   
@@ -87,3 +86,9 @@ input[type=submit]:hover {
     clear: both;
 }
   
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}

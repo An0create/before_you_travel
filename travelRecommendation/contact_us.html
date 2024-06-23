@@ -2,10 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="./about_us.css">
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<link rel="stylesheet" href="./about_us.css">
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Style inputs */
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: transparent;
+      padding: 10px;
+    }
+    
 
+    .column {
+      float: left;
+      width: 50%;
+      margin-top: 6px;
+      padding: 20px;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    </style>
 </head>
 
 <body>
@@ -17,24 +74,29 @@
         </ul>
 </nav>
 
-
 <div class="container">
-    <img src="https://t3.ftcdn.net/jpg/03/82/24/44/360_F_382244401_FNIivSDbE7ojw5sT70WYVgmFsw2R7DHD.jpg" alt="Beach" style="width:100%;">
     <div style="text-align:center">
       <h2>Contact Us</h2>
-      <p>Get in touch with us</p>
+      <p>Get in touch:</p>
     </div>
-    <div class="content">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Enter your name">
-          <label for="subject">Email</label>
-          <input type="text" id="email" name="email" placeholder="Enter your email">
-          <label for="message">Message</label>
-          <input type="text" id="message" name="message" placeholder="Enter your message" style="height:300px width:600px"></textarea>
+    <div class="row">
+      <div class="column">
+        <img src="https://t3.ftcdn.net/jpg/03/82/24/44/360_F_382244401_FNIivSDbE7ojw5sT70WYVgmFsw2R7DHD.jpg" alt="Beach" style="width:100%;">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Enter your name..">
+          <label for="fname">Email</label>
+          <input type="text" id="Lname" name="firstname" placeholder="Enter your email..">
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Enter your message.." style="height:170px"></textarea>
           <input type="submit" value="Submit">
         </form>
+      </div>
+    </div>
   </div>
-</div>
+<script src="./travel_recommendation.js"></script>
 
 </body>
 </html>
