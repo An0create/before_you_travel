@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Contact Us</title>
-<link rel="stylesheet" href="./about_us.css">
+<link rel="stylesheet" href="/Users/anocreates/before_you_travel/travelRecommendation/style/about_us.css">
 <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,6 @@
       box-sizing: border-box;
     }
     
-    /* Style inputs */
     input[type=text], select, textarea {
       width: 100%;
       padding: 12px;
@@ -68,9 +67,9 @@
 <body>
     <nav><h1>BeforeYouTravel</h1>
         <ul>
-          <li><a href="./travel_recommendation.html" id="home">Home </a></li>
-          <li><a href="./about_us.html" id="aboutUs">About Us </a></li>
-          <li><a href="./travel_recommendation.js" id="contactUs">Contact Us </a></li>
+          <li><a href="/Users/anocreates/before_you_travel/travelRecommendation/index.html" id="home">Home </a></li>
+          <li><a href="/Users/anocreates/before_you_travel/travelRecommendation/pages/about_us.html" id="aboutUs">About Us </a></li>
+          <li><a href="/Users/anocreates/before_you_travel/travelRecommendation/pages/contact_us.html" id="contactUs">Contact Us </a></li>
         </ul>
 </nav>
 
@@ -91,12 +90,20 @@
           <input type="text" id="Lname" name="firstname" placeholder="Enter your email..">
           <label for="subject">Message</label>
           <textarea id="subject" name="subject" placeholder="Enter your message.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
+          <button type="submit" onclick="thankyou()">Submit</button>
+</form>
+<script>
+function thankyou(){
+    alert('Thank you for contacting us!')
+}
+</script>
         </form>
       </div>
     </div>
   </div>
-<script src="./travel_recommendation.js"></script>
+</div>
+
+<script src="/Users/anocreates/before_you_travel/travelRecommendation/style/travel_recommendation.js"></script>
 
 </body>
 </html>
